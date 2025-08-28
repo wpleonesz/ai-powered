@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "checkJs": false,
+    "typeRoots": ["node_modules/@types", "./@types"],
+    "paths": {
+      "@components/*": ["components/*"],
+      "@database/*": ["database/*"],
+      "@module/*": ["module/*"],
+      "@lib/*": ["lib/*"],
+      "@middleware/*": ["middleware/*"],
+      "@helper/*": ["helper/*"],
+      "@pages/*": ["pages/*"],
+      "@redux/*": ["redux/*"],
+      "@ui/*": ["ui/*"],
+      "@public/*": ["public/*"],
+      "@services/*": ["services/*"],
+      "@validations/*": ["validations/*"],
+      "@styles/*": ["styles/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    ".next"
+  ]
+}

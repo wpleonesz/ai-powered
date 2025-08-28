@@ -1,0 +1,1 @@
+const { PrismaClient } = require('@prisma/client'); const prisma = new PrismaClient(); async function main() { const existingUser = await prisma.base_user.findFirst({ where: { OR: [{ username: 'wp.leonesz' }, { email: 'wp.leonesz@ejemplo.edu.ec' }] } }); console.log('Usuario existente:', existingUser); } main().catch(console.error).finally(() => prisma.$disconnect());

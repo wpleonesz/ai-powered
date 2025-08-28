@@ -1,0 +1,11 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  only:
+    - main
+  script:
+    - yarn
+    - yarn build
+    - pm2 reload ecosystem.config.js --env production
