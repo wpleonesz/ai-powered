@@ -665,8 +665,8 @@ const seedUser = async ({ username, password, email }) => {
 const seedUsers = async () => {
   await seedUser({
     username: 'admin',
-    password: parsePassword('SISMAuea2024@'),
-    email: 'admin.sgu@uea.edu.ec',
+    password: parsePassword('Admin1234@'),
+    email: 'admin.sgu@example.com',
   });
 };
 
