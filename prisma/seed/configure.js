@@ -150,7 +150,18 @@ const seedModules = async () => {
     active: false,
   });
 
-  const modules = { base, audit };
+  const inventory = await seedModule({
+    code: 'inventory',
+    name: 'Inventario',
+    subname: 'Gestión de inventario',
+    description:
+      'Funcionalidades que permiten la gestión y control de inventario en la aplicación',
+    icon: '/assets/images/module/icons/inventory.png',
+    installed: false,
+    active: false,
+  });
+
+  const modules = { base, audit, inventory };
   return modules;
 };
 
@@ -347,8 +358,6 @@ const seedPages = async (modules) => {
     menus,
     pages: _pages,
     parameter,
-    group,
-    ou,
     institution,
     campus,
     institutionIp,
@@ -547,8 +556,6 @@ const seedMenus = async (modules, pages) => {
     menus: _menus,
     pages: _pages,
     parameter,
-    group,
-    ou,
     institution,
     campus,
     institutionIp,

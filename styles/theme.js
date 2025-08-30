@@ -145,7 +145,7 @@ const theme = createTheme({
     MuiButton: {
       root: {
         borderRadius: 8,
-        textTransform: 'none',
+        textTransform: 'uppercase',
         fontWeight: 500,
         boxShadow: 'none',
         padding: '8px 16px',
