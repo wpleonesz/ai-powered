@@ -47,3 +47,5 @@ prisma/playground.js
 
 # uplodas
 /uploads
+
+.yarn
