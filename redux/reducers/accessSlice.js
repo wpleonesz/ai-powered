@@ -46,6 +46,7 @@ export const selector = {
     department: (state) => handler(state, 'department'),
     job: (state) => handler(state, 'job'),
     institutionip: (state) => handler(state, 'institutionip'),
+    products: (state) => handler(state, 'product'),
   },
 };
 

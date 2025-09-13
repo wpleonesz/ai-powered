@@ -249,3 +249,15 @@ model Audit_log {
   data     Json
   User     Base_user @relation(fields: [userId], references: [id])
 }
+
+model Products {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  sku         String   @unique
+  price       Float
+  stock       Int      @default(0)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
